@@ -23,7 +23,7 @@ class HybridQNN(nn.Module):
         )
         norm_dict = {
             "tanh": lambda x: F.tanh(x)*(np.pi/2),
-            "gradual_tanh": lambda x: F.tanh(x/20) * (np.pi/2),
+            "gradual_tanh": lambda x: F.tanh(x/hyper_params["width"]) * (hyper_params["rotation"]),
             "layer_norm": nn.LayerNorm(self.num_encoding_params),
             "id": nn.Identity()
         }
