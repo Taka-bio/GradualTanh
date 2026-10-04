@@ -1,4 +1,4 @@
 *.png
 *.npy
-*.json
+# *.json
 *.pt

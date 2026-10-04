@@ -1,0 +1,8 @@
+{
+    "num_qubits": 4,
+    "num_encoding_layer": 4,
+    "reps": 1,
+    "lr": 1e-5,
+    "width": 20,
+    "rotation": 1.5707963267948966
+}
